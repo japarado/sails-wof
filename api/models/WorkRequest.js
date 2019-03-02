@@ -19,6 +19,24 @@ module.exports = {
     requestDate: {
       type: 'ref',
       columnType: 'datetime',
+      required: true,
+    },
+    dueDate: {
+      type: 'ref',
+      columnType: 'datetime',
+      required: true,
+    },
+    purpose: {
+      type: 'string',
+      required: true,
+    },
+    audience: {
+      type: 'string',
+      required: 'true',
+    },
+    progress: {
+      type: 'number',
+      defaultsTo: 0,
     }
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
@@ -29,6 +47,7 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+
 
   },
 
