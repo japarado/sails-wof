@@ -54,6 +54,4 @@ module.exports.datastores = {
     adapter: 'sails-mongo',
     url: 'mongodb://root@localhost/sails-wof',
   },
-
-
 };
