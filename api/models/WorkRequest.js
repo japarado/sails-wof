@@ -32,7 +32,7 @@ module.exports = {
     },
     audience: {
       type: 'string',
-      required: 'true',
+      required: true,
     },
     progress: {
       type: 'number',
