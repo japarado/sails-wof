@@ -21,5 +21,10 @@ module.exports.policies = {
   'security/grant-csrf-token': true,
 
   // For testin purposes only, must be deleted when finished
-  'profile': true
+  ProfileController: {
+    "*": true,
+  },
+  AuthController: {
+    '*': true,
+  },
 };
