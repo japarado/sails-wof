@@ -19,4 +19,7 @@ module.exports.policies = {
   'deliver-contact-form-message': true,
 
   'security/grant-csrf-token': true,
+
+  // For testin purposes only, must be deleted when finished
+  'profile': true
 };
