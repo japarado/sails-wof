@@ -9,7 +9,7 @@ module.exports = {
   user: (req, res) =>
   {
     console.log("WOW")
-    let userId = req.session.userId;
+    let userId = req.session.userId ? req.sessions.userId : false;
     let context = {
       userId: userId
     };
