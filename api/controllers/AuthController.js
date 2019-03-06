@@ -8,7 +8,7 @@
 module.exports = {
   user: (req, res) =>
   {
-    let userId = req.session.userId ? req.sessionsessions.userId : false;
+    let userId = req.session.userId ? req.session.userId : false;
     let context = {
       userId: userId
     };
