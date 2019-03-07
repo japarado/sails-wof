@@ -180,10 +180,10 @@ without necessarily having a billing card.`
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
-    /*profile: {
+    profile: {
       collection: 'profile',
       via: 'user',
-    }*/
+    }
 
   },
 
