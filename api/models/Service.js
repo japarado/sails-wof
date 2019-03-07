@@ -33,6 +33,11 @@ module.exports = {
       via: 'services'
     },
 
+    provisions: {
+      collection: 'provision',
+      via: 'services',
+    },
+
   },
 
 };
