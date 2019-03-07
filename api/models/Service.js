@@ -1,5 +1,5 @@
 /**
- * WorkRequest.js
+ * Service.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -15,29 +15,10 @@ module.exports = {
     name: {
       type: 'string',
       required: true,
+      description: 'The work request service text',
+      maxLength: 255,
     },
-    requestDate: {
-      type: 'ref',
-      columnType: 'datetime',
-      required: true,
-    },
-    dueDate: {
-      type: 'ref',
-      columnType: 'datetime',
-      required: true,
-    },
-    purpose: {
-      type: 'string',
-      required: true,
-    },
-    audience: {
-      type: 'string',
-      required: true,
-    },
-    progress: {
-      type: 'number',
-      defaultsTo: 0,
-    },
+
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -47,14 +28,9 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-    descriptions: {
-      collection: 'description',
-      via: 'workRequests'
-    },
-
-    services: {
-      collection: 'service',
-      via: 'workRequests',
+    workRequests: {
+      collection: 'workrequest',
+      via: 'services'
     },
 
   },
