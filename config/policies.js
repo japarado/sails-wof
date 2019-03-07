@@ -27,4 +27,7 @@ module.exports.policies = {
   AuthController: {
     '*': true,
   },
+  SampleController: {
+    '*': true,
+  }
 };
