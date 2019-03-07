@@ -65,6 +65,7 @@ module.exports.routes = {
   // START CUSTOM ROUTES
   "GET /csrfToken": { action: "security/grant-csrf-token" },
   "GET /api/v1/user": 'AuthController.user',
-  // Pages
-  // WorkRequest
+
+  // Sample Testing Routes
+  "GET /userProfile/:id": 'SampleController.userProfile',
 };
