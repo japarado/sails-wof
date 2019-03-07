@@ -12,6 +12,12 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
+    name: {
+      type: 'string',
+      required: true,
+      description: 'The work request description text',
+      maxLength: 1000,
+    }
 
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
