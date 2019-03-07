@@ -183,6 +183,11 @@ without necessarily having a billing card.`
     profile: {
       collection: 'profile',
       via: 'user',
+    },
+
+    requestor: {
+      collection: 'requestor',
+      via: 'user',
     }
 
   },
