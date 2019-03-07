@@ -17,7 +17,7 @@ module.exports = {
       required: true,
       description: 'The work request description text',
       maxLength: 1000,
-    }
+    },
 
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
@@ -28,6 +28,10 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+    workRequests: {
+      collection: 'workrequest',
+      via: 'descriptions',
+    }
 
   },
 
