@@ -59,8 +59,12 @@ module.exports = {
 
     requestor: {
       model: 'requestor',
-    }
+    },
 
+    workers: {
+      collection: 'worker',
+      via: 'workRequests',
+    }
   },
 
 };
