@@ -18,11 +18,14 @@ module.exports.policies = {
   'view-homepage-or-redirect': true,
   'deliver-contact-form-message': true,
 
+  // START CUSTOM POLICIES
+
+  // Allow CSRF retrieval whenever
   'security/grant-csrf-token': true,
 
   // For testin purposes only, must be deleted when finished
   ProfileController: {
-    "*": true,
+    '*': true,
   },
   AuthController: {
     '*': true,
