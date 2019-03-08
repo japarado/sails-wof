@@ -8,9 +8,9 @@
 module.exports = {
   user: (req, res) =>
   {
-    let userId = req.session.userId ? req.session.userId : false;
+    let userId = req.me ? req.me : false;
     let context = {
-      userId: userId
+      user: userId
     };
     //return res.status(200).body(context);
     res.status(200).send(context);
