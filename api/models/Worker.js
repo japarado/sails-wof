@@ -31,6 +31,10 @@ module.exports = {
       model: 'division',
     },
 
+    workRequests: {
+      collection: 'workrequest',
+      via: 'workers',
+    },
   },
 
 };
