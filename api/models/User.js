@@ -188,6 +188,11 @@ without necessarily having a billing card.`
     requestor: {
       collection: 'requestor',
       via: 'user',
+    },
+
+    worker: {
+      collection: 'worker',
+      via: 'user'
     }
 
   },
