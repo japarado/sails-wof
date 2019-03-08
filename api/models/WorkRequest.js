@@ -57,6 +57,10 @@ module.exports = {
       via: 'workRequests',
     },
 
+    requestor: {
+      model: 'requestor',
+    }
+
   },
 
 };
