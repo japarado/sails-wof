@@ -64,7 +64,7 @@ module.exports = {
     workers: {
       collection: 'worker',
       via: 'workRequests',
-    }
+    },
   },
 
 };
