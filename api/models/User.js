@@ -193,9 +193,7 @@ without necessarily having a billing card.`
     worker: {
       collection: 'worker',
       via: 'user'
-    }
+    },
 
   },
-
-
 };
