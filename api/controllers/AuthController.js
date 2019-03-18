@@ -7,7 +7,14 @@
 
 module.exports = {
   user: (req, res) => {
-    res.status(200).send(req.me)
+    if(req.me)
+    {
+      res.status(200).send(req.me);
+    }
+    else
+    {
+      res.status(200).send(false);
+    }
   }
 };
 
