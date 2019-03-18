@@ -35,12 +35,26 @@ the account verification message.)`,
       description: 'The unencrypted password to use for the new account.'
     },
 
-    fullName:  {
+    /*fullName:  {
       required: true,
       type: 'string',
       example: 'Frida Kahlo de Rivera',
       description: 'The user\'s full name.',
-    }
+    }*/
+
+    firstName: {
+      required: true,
+      type: 'string',
+      example: 'Hercule',
+      description: 'User\s first name',
+    },
+
+    lastName: {
+      required: true,
+      type: 'string',
+      example: 'Poirot',
+      description: 'User\'s last name',
+    },
 
   },
 
@@ -75,7 +89,9 @@ the account verification message.)`,
     var newUserRecord = await User.create(_.extend({
       emailAddress: newEmailAddress,
       password: await sails.helpers.passwords.hashPassword(inputs.password),
-      fullName: inputs.fullName,
+      //fullName: inputs.fullName,
+      firstName: inputs.firstName,
+      lastName: inputs.lastName,
       tosAcceptedByIp: this.req.ip
     }, sails.config.custom.verifyEmailAddresses? {
       emailProofToken: await sails.helpers.strings.random('url-friendly'),
