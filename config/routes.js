@@ -62,10 +62,4 @@ module.exports.routes = {
   'POST  /api/v1/entrance/update-password-and-login':    { action: 'entrance/update-password-and-login' },
   'POST  /api/v1/deliver-contact-form-message':          { action: 'deliver-contact-form-message' },
 
-  // START CUSTOM ROUTES
-  'GET /csrfToken': { action: 'security/grant-csrf-token' },
-  'GET /api/v1/user': 'AuthController.user',
-
-  // Sample Testing Routes
-  'GET /userProfile/:id': 'SampleController.userProfile',
 };

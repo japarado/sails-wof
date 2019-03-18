@@ -52,6 +52,8 @@ module.exports.datastores = {
     // url: 'mysql://user:password@host:port/database',
 
     adapter: 'sails-mongo',
-    url: 'mongodb://root@localhost/sails-wof',
+    url: 'mongodb://root@localhost/sails-wof'
   },
+
+
 };
