@@ -130,3 +130,10 @@ lib-cov
 *.out
 *.pid
 
+# tags file
+tags
+tags.lock
+tags.temp
+
+# MySQL Workbench .bak files
+*.bak
