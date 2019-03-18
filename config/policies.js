@@ -18,4 +18,7 @@ module.exports.policies = {
   'view-homepage-or-redirect': true,
   'deliver-contact-form-message': true,
 
+  // Start custom policies
+  'security/grant-csrf-token': true,
+  'AuthController.user': true,
 };
