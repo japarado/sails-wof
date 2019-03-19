@@ -1,5 +1,5 @@
 /**
- * Service.js
+ * Division.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -16,7 +16,7 @@ module.exports = {
       type: 'string',
       maxLength: 255,
       required: true,
-      description: 'Work request service text',
+      description: 'Division name',
     },
 
 
@@ -28,15 +28,11 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-    workRequests: {
-      collection: 'workRequest',
-      via: 'services',
+    workers: {
+      collection: 'worker',
+      via: 'division',
     },
 
-    provisions: {
-      collection: 'provision',
-      via: 'services',
-    },
   },
 
 };
