@@ -63,7 +63,7 @@ module.exports = {
     services: {
       collection: 'service',
       via: 'workRequests',
-    }
+    },
 
   },
 
