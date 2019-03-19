@@ -189,6 +189,11 @@ without necessarily having a billing card.`
       via: 'user',
     },
 
+    profile: {
+      collection: 'profile',
+      via: 'user'
+    },
+
   },
 
 
