@@ -20,6 +20,7 @@ module.exports.policies = {
 
   // Start custom policies
   'security/grant-csrf-token': true,
+
   'AuthController': {
     '*': true,
   },
