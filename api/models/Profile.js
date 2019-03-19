@@ -63,7 +63,6 @@ module.exports = {
 
     zipCode: {
       type: 'number',
-      maxLength: 255,
       required: false,
       description: 'User zip/postal code',
     },
