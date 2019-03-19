@@ -33,6 +33,11 @@ module.exports = {
       via: 'division',
     },
 
+    leads: {
+      collection: 'lead',
+      via: 'division',
+    },
+
   },
 
 };

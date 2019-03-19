@@ -1,5 +1,5 @@
 /**
- * Requestor.js
+ * Lead.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -22,25 +22,15 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-    user: {
-      model: 'user',
+    requestor: {
+      model: 'requestor',
       unique: true,
     },
 
-    projectManager: {
-      collection: 'projectManager',
-      via: 'requestor',
+    division: {
+      model: 'division',
     },
 
-    lead: {
-      collection: 'lead',
-      via: 'requestor',
-    },
-
-    workRequests: {
-      collection: 'workRequest',
-      via: 'requestor'
-    },
 
   },
 
