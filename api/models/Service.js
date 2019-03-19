@@ -36,7 +36,8 @@ module.exports = {
     provisions: {
       collection: 'provision',
       via: 'services',
-    }
+    },
+
 
   },
 
